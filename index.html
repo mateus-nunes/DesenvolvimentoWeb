@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 31/03</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1 class="texto-principal red">Titulo da página</h1>
+    <p id="teste">Texto ID</p>
+    <p class="red">Texto classe</p>
+    <p class="texto-principal">Texto TextoTextoTextoTextoTextoTexto</p>
+
+    <div class="container">
+        Container 1
+        <h1>Titulo</h1>
+    </div>
+    <div class="container">
+        Container 2
+        <h1>Titulo</h1>
+    </div>
+    <div class="container">
+        Container 1
+    </div>
+    <div class="container">
+        Container 2
+    </div>
+
+    <a href="http://ifto.edu.br" target="_blank">Site IFTO</a>
+    <br>
+    <a href="#final">Ir para o Final</a>
+
+    <a href="mailto:mateus.santos@ifto.edu.br">Email</a>
+
+    <form action="">
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" required id="nome" pattern="/^\d{3}\.\d{3}\.\d{3}\-\d{2}$/"
+            placeholder="Informe o nome" minlength="5">
+        <br>
+        <label for="email">Email:</label>
+        <input type="text" name="email" id="email">
+        <br>
+        <label for="data">Data:</label>
+        <input type="date" name="data" id="data">
+        <br>
+        <label for="senha">Senha:</label>
+        <input type="password" name="senha" id="senha">
+        <br>
+        <label for="numero">Número:</label>
+        <input type="number" name="numero" id="numero">
+        <br>
+        <label for="arquivo">Arquivo:</label>
+        <input type="file" name="arquivo" id="arquivo">
+        <br>
+        <label for="telefone">Telefone:</label>
+        <input type="tel" name="telefone" id="telefone">
+        <br>
+        <label for="curso">Curso</label>
+        <select name="curso" id="curso">
+            <option value="">Selecione o curso</option>
+            <option value="ADS">Análise e Desenvolvimento de Sistemas</option>
+            <option value="PED" selected>Pedagogia</option>
+            <option value="AGRO">Agronomia</option>
+        </select>
+        <br>
+        <fieldset>
+            <legend>Sexo:</legend>
+            <label for="sexo">Masculino</label>
+            <input type="radio" checked name="sexo" value="masculino">
+            <label for="sexo">Feminino</label>
+            <input type="radio" name="sexo" value="feminino">
+            <label for="sexo">Não Declarado</label>
+            <input type="radio" name="sexo" value="Não declarado">
+        </fieldset>
+        <fieldset>
+            <legend>Esportes</legend>
+            <label for="esporte">Futebol</label>
+            <input type="checkbox" checked name="esporte" value="Futebol">
+            <label for="esporte">Vôlei</label>
+            <input type="checkbox" name="esporte" value="Vôlei">
+            <label for="esporte">Basquete</label>
+            <input type="checkbox" name="esporte" value="Basquete">
+            <label for="esporte">Tênis</label>
+            <input type="checkbox" name="esporte" value="Tênis">
+        </fieldset>
+        <br>
+        <input type="submit" value="Enviar">
+    </form>
+
+    <h1 id="final">Final da página</h1>
+
+</body>
+
+</html>

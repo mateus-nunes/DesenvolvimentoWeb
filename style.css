@@ -3,6 +3,13 @@ h1{
   font-size: 30px;
 }
 
+.centralizada{
+    margin: 0 auto;
+    width: 600px;
+    height: 400px;
+    background-color: beige;
+}
+
 .texto-principal{
     font-size: 20px;
     color:white;

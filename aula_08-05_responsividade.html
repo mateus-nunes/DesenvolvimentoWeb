@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsividade</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /** MOBILE **/
+        h1 {
+            color: blue;
+        }
+
+        .container .col {
+            background-color: grey;
+            border: 1px solid red;
+            width: 100%;
+            display: inline-block;
+        }
+
+        /** TABLET **/
+        @media (min-width: 768px) and (max-width: 1023px) {
+            h1 {
+                color: red;
+            }
+
+            .container .col {
+                width: 49%;
+            }
+        }
+
+        /** DESKTOP **/
+        @media (min-width: 1024px) {
+            h1 {
+                color: green;
+            }
+
+            .container .col {
+                width: 24%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Responsividade</h1>
+
+    <div class="container">
+        <div class="col">
+            Coluna 1
+        </div>
+        <div class="col">
+            Coluna 2
+        </div>
+        <div class="col">
+            Coluna 3
+        </div>
+        <div class="col">
+            Coluna 4
+        </div>
+    </div>
+</body>
+
+</html>

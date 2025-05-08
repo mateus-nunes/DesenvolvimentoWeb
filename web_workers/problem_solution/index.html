@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Workers em JS</title>
+</head>
+
+<body>
+    <h1>A simple web worker</h1>
+    <article>The total:
+        <pre id="result"></pre>
+        <div id="status"></div>
+        <div id='random'> </div>
+        <pre>Cliques: <span id="click"></span></pre>
+    </article>
+
+
+    <div id="actions">
+        <input type="number" name="num" id="num" />
+        <button onclick="start()" title="Start the work">Start</button>
+        <button onclick="stop()" title="Stop the work and go have a drink">Stop</button>
+        <button onclick="clique()">click me</button>
+    </div>
+
+    <script src='main.js'></script>
+    <script src='worker.js'></script>
+</body>
+
+</html>

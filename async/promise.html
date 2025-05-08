@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Async</title>
+</head>
+
+<body>
+    <h1>Consulta CEP</h1>
+
+    <label for="cep">CEP</label>
+    <input type="number" id="cep">
+    <button id="btn_buscar">Buscar</button>
+
+    <pre id="resultado"></pre>
+
+    <script>
+
+
+
+        document.getElementById("btn_buscar").onclick = function () {
+
+            let cep = parseInt(document.getElementById("cep").value);
+
+            if (typeof (cep) == "number" && cep.toString().length == 8) {
+
+                let myPromise = new Promise(function (resolve, reject) {
+                    let req = new XMLHttpRequest();
+                    req.open("GET", getUrlCep(cep));
+
+                    req.onload = function () {
+                        if (req.status == 200) {
+                            resolve(req.responseText)
+                        } else {
+                            reject("Erro: " + req.status)
+                        }
+                    }
+
+                    req.send();
+                })
+
+                myPromise.then(
+                    function (result) {
+                        exibirResultado(result)
+                    },
+                    function (error) {
+                        elert(error)
+                    }
+                )
+
+            } else {
+                alert("CEP Inválido")
+            }
+
+        }
+
+        function exibirResultado(response) {
+            document.getElementById("resultado").innerHTML = response;
+        }
+
+        function getUrlCep(cep) {
+            const urlDefault = "https://viacep.com.br/ws/";
+
+            return urlDefault + cep + "/json"
+        }
+    </script>
+</body>
+
+</html>

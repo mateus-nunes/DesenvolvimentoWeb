@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade sobre layout CSS - 1</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h5,
+        p {
+            margin-top: 0;
+            margin-block: 0;
+        }
+
+        header {
+            background-color: blueviolet;
+            color: white;
+            text-align: center;
+            height: 50px;
+        }
+
+        .container{
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .lateral {
+            float: left;
+            background-color: green;
+            color: white;
+            vertical-align: top;
+            width: 30%;
+        }
+
+        main {
+            background-color: rgb(71, 102, 25);
+            color: white;
+            vertical-align: top;
+            width: 70%;
+            margin-left: 30%;
+        }
+        footer{
+            clear: both;
+            background-color: red;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>NOME DA EMPRESA</h1>
+    </header>
+
+    <div class="container">
+
+        <aside class="lateral">
+            <h1>ASIDE</h1>
+
+            <nav>
+                <h1>NAV</h1>
+                <ul>
+                    <li>
+                        Home
+                    </li>
+                    <li>
+                        Noticias
+                    </li>
+                    <li>
+                        Produtos
+                    </li>
+                    <li>
+                        Sobre
+                    </li>
+                    <li>
+                        Contato
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main>
+            <h1>MAIN</h1>
+            <section>
+                <h1>SECTION 1</h1>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis temporibus dolorum delectus odio debitis excepturi porro illum vel? Illo obcaecati mollitia itaque at voluptates quisquam dolor perspiciatis modi impedit cupiditate.
+                </p>
+            </section>
+            <section>
+                <h1>SECTION 2</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae totam placeat perferendis sequi enim voluptas expedita nemo repellat. Dignissimos provident similique cumque vitae labore omnis natus unde nisi quisquam tempora.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur tempora repudiandae iusto. Quidem, sit officia, veritatis quo, voluptatibus harum magni optio ipsam minus voluptates libero cum repudiandae culpa fuga dolores.</p>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <h1>FOOTER</h1>
+    </footer>
+</body>
+
+</html>

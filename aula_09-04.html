@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        @font-face {
+            font-family: "Montserrat";
+            src: url("./fonts/Montserrat/Montserrat-VariableFont_wght.ttf");
+        }
+
+        * {
+            font-family: "Montserrat", "Times New Roman", Times, serif;
+        }
+
+        .testes {
+            background-color: blue;
+            color: white;
+            border: 2px red solid;
+            display: block;
+            margin: 0 auto;
+            max-width: 600px;
+            min-width: 300px;
+        }
+
+        ul li {
+            display: inline-block;
+            border: 2px red solid;
+            width: 150px;
+            height: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .simples {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            color: white;
+            margin: 20px auto;
+        }
+
+        .box-sizing {
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            color: white;
+            margin: 20px auto;
+            padding: 20px;
+            border: 5px black solid;
+            box-sizing: border-box;
+        }
+
+        .fixed {
+            position: fixed;
+            top: 0;
+            right: 5px;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            color: white;
+        }
+
+        .relative {
+            position: relative;
+            width: 500px;
+            height: 500px;
+            background-color: blue;
+            color: white;
+        }
+
+        .absolute {
+            position: absolute;
+            top: 20px;
+            left: 50px;
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            color: white;
+        }
+
+        .sticky {
+            position: sticky;
+            background-color: green;
+            color: white;
+            top: 0;
+        }
+
+        .sticky2 {
+            position: sticky;
+            background-color: green;
+            color: white;
+            top: 90vh;
+        }
+
+        .container-img {
+            background-color: purple;
+            color: white;
+            overflow: auto;
+        }
+
+        img {
+            float: left;
+        }
+
+        .float-left {
+            background-color: red;
+            float: left;
+            width: 200px;
+        }
+
+        .conteudo {
+            background-color: blue;
+            clear: both;
+        }
+
+    
+    </style>
+</head>
+
+<body>
+    <div class="container-img">
+        <img src="https://picsum.photos/150" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ducimus impedit magnam quo non aut
+            laborum harum itaque eius repellendus est totam deserunt sint doloremque quis, ipsa reiciendis velit a?</p>
+    </div>
+
+    <div class="float-left">
+        <h1>DIV FLOAT</h1>
+    </div>
+    <div class="conteudo">
+        <h1>div com conteudo</h1>
+    </div>
+
+    <!--
+
+    <div class="relative">
+        <h1>RELATIVE</h1>
+
+        <div class="absolute">
+            <h1>Absolute</h1>
+        </div>
+    </div>
+
+    <div class="sticky">
+        <h1>Menu sticky</h1>
+    </div>
+
+    <div class="sticky2">
+        <h1>Menu bottom</h1>
+    </div>
+    <div class="fixed">
+        <h1>FIXED</h1>
+    </div>
+    <div class="testes">
+        <h1>Conteúdo 1</h1>
+    </div>
+
+    <div class="testes">
+        <h1>Conteúdo 2</h1>
+    </div>
+    <ul>
+        <li>Home</li>
+        <li>Posts</li>
+        <li>Sobre</li>
+        <li>Contato</li>
+    </ul>
+
+    <div class="simples">
+        <h1>SIMPLES</h1>
+    </div>
+    <div class="box-sizing">
+        <h1>BOX SIZING</h1>
+    </div>
+    <div class="box-sizing">
+        <h1>BOX SIZING</h1>
+    </div>
+    <div class="box-sizing">
+        <h1>BOX SIZING</h1>
+    </div>
+    <div class="box-sizing">
+        <h1>BOX SIZING</h1>
+    </div>
+
+-->
+</body>
+
+</html>

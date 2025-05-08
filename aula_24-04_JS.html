@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form id="f" action="login.php">
+
+        <input type="text" id="user">
+        <input type="password" id="pass">
+        <button type="submit">Login</button>
+    </form>
+    <p id="texto" style="color: red"></p>
+    <script>
+        let form = document.getElementById("f")
+
+        let user = document.getElementById("user")
+        let pass = document.getElementById("pass")
+        form.onsubmit = ((ev)=>{
+            ev.preventDefault();
+            if(user.value == "admin" && pass.value == "admin"){
+                alert("Login com sucesso");
+                location.href = "/admin"
+            }else{
+                document.getElementById("texto").innerText = "Credenciais incorretas"
+            }
+
+        })
+
+    </script>
+</body>
+
+</html>

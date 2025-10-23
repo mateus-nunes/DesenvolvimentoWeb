@@ -1,0 +1,18 @@
+{% extends "Base.twig" %}
+
+{% block main %}
+
+<h1>{{ mensagem }}</h1>
+
+<ul>
+{% for user in users %}
+    <li>{{ user.name }} - {{ user.mail }}</li>
+{% endfor %}
+</ul>
+{% endblock %}
+
+{% block scriptjs %}
+
+<script src="josadoasd" />
+
+{% endblock %}

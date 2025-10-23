@@ -1,5 +1,5 @@
 
-let myWorker = new Worker("worker.js");
+let myWorker = new Worker("worker.js")//thread
 
 function start() {
   console.log("WebWorker: Starting");

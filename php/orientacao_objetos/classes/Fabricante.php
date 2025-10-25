@@ -17,6 +17,7 @@ class Fabricante extends PessoaJuridica
         return $this->nome;
     }
 
+    //Sobrescrita -> Override
     public function getCnpj()
     {
         return "CNPJ do fabricante: " . $this->cnpj;

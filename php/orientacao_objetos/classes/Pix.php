@@ -2,7 +2,7 @@
 
 require_once "MetodoPagamento.php";
 
-class CartaoCredito extends MetodoPagamento
+class Pix extends MetodoPagamento
 {
 
     public function pagar()

@@ -4,8 +4,8 @@ require_once "bd.php";
 
 //verifica ser o form foi enviado
 if(isset($_POST['nome']) and $_POST['nome'] != ""){
-    
-    $nome = $_POST["nome"];
+      
+    $nome = filter_var($_POST["nome"], FILTER_SANITIZE_STRING);
     $email = $_POST['email'];
     $senha = $_POST['senha'];
     

@@ -33,8 +33,8 @@
                 echo "<td>$usuario->id</td>";
                 echo "<td>$usuario->name</td>";
                 echo "<td>$usuario->mail</td>";
-                echo "<td></td>";
-                echo "<td></td>";
+                echo "<td><a href='editar.php?id=$usuario->id'>editar</a></td>";
+                echo "<td><a href='excluir.php?id=$usuario->id'>excluir</a></td>";
                 echo "</tr>";
             }
         ?>

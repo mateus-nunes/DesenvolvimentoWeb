@@ -2,6 +2,8 @@
 
 require_once "bd.php";
 
+require_once "verifica_login.php";
+
 $id = $_GET['id'];
 
 $sql = $conn->prepare("SELECT * FROM users WHERE id = :id");

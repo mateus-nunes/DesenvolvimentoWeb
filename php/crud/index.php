@@ -1,4 +1,7 @@
 <?php
+
+    require_once "verifica_login.php";
+
     require_once "bd.php";
 
     $sql = $conn->prepare("SELECT * FROM users");
@@ -15,6 +18,11 @@
     <title>Usuários cadastrados</title>
 </head>
 <body>
+    <?php
+    echo "Seja bem vindo: " . $usuario_logado->name;
+    echo " | <a href='logout.php'>sair</a>";
+    ?>
+
     <h1>Usuários cadastrados</h1>
 
     <a href="cadastro.php">Cadastrar usuário</a>

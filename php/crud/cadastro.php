@@ -9,10 +9,13 @@ if(isset($_POST['nome']) and $_POST['nome'] != ""){
     $email = $_POST['email'];
     $senha = $_POST['senha'];
     
+    //CRIPTOGRAFIA DA SENHA
+    $hash = password_hash($senha, PASSWORD_BCRYPT);
+
     $sql = $conn->prepare("INSERT INTO users(name,mail,password) VALUES(:nome,:email,:senha)");
     $sql->bindValue(":nome",$nome);
     $sql->bindValue(":email",$email);
-    $sql->bindValue(":senha",$senha);
+    $sql->bindValue(":senha",$hash);
     $sql->execute();
 
     //retorna o id do usuário cadastrado
